@@ -3,9 +3,9 @@ const calculator = {
     number2: 0,
     operation: '',
     inputOuput: document.getElementById('calcInput'),
-    // clear: function () {
-    //     this.inputOuput
-    // },
+    clear: function () {
+        this.inputOuput.value = '';
+    },
 
     buttonClicked: function (button) {
         console.log(button.innerHTML);
@@ -15,6 +15,7 @@ const calculator = {
             case 'M':
                 break;
             case 'C':
+            this.clear();
                 break;
             case '/':
                 break;
