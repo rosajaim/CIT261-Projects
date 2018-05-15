@@ -1,3 +1,5 @@
+debugger;
+console.dir('document.querySelector'('.calcButtons'));
 const calculator = {
     number1: 0,
     number2: 0,
@@ -8,10 +10,10 @@ const calculator = {
     },
 
     buttonClicked: function (button) {
-        console.log(button.innerHTML);
-        let inputBox = document.getElementById('calcInput');
+        console.log(button);
+        let inputBox = this.;
 
-        switch (button.innerHTML) {
+        switch (button.target.innerHTML) {
             case 'M':
                 break;
             case 'C':
@@ -33,3 +35,6 @@ const calculator = {
         }
     }
 }
+const buttonContainer = document.querySelector('.calcButtons');
+buttonContainer.addEventListener('touched'),
+calculator.buttonClicked;

@@ -14,6 +14,13 @@ const quiz = [{
 
 // View Object
 const view = {
+    show(element) {
+        element.style.display = 'block';
+    },
+    hide(element) {
+        element.style.display = 'none';
+    },
+    start: document.getElementById('start'),
     score: document.querySelector('#score strong'),
     question: document.getElementById('question'),
     result: document.getElementById('result'),
@@ -63,7 +70,12 @@ const game = {
     },
     gameOver() {
         view.render(view.info, `Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
+        view.show(view.start);
     }
+
 }
 
+view.start.addEventListener('click', () => game.start(quiz), false);
+
 game.start(quiz);
+view.hide(view.start);
