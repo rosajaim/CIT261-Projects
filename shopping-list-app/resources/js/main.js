@@ -11,14 +11,15 @@ var data = (localStorage.getItem('shopList')) ? JSON.parse(localStorage.getItem(
   
   // User clicked on the add button
   // If there is any text inside the item field, add that text to the shop list
-  document.getElementById('add').addEventListener('touchstart', function() {
+  document.getElementById('add').addEventListener('click', function() {
     var value = document.getElementById('item').value;
     if (value) {
       addItem(value);
     }
   });
 
-  document.getElementById('add').addEventListener('click', function() {
+
+  document.getElementById('add').addEventListener('touchstart', function() {
     var value = document.getElementById('item').value;
     if (value) {
       addItem(value);
