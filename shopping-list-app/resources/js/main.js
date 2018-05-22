@@ -17,7 +17,15 @@ var data = (localStorage.getItem('shopList')) ? JSON.parse(localStorage.getItem(
       addItem(value);
     }
   });
+
+  document.getElementById('add').addEventListener('click', function() {
+    var value = document.getElementById('item').value;
+    if (value) {
+      addItem(value);
+    }
+  });
   
+  //If there is any text inside thr item field, add that when pressing 'Enter' key
   document.getElementById('item').addEventListener('keydown', function (e) {
     var value = this.value;
     if (e.code === 'Enter' && value) {
