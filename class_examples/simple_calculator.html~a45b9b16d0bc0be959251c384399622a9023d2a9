@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="viewport" connect="width=device-width,
+    initial-scale=1">
+    <script>
+        function add() {
+            let num1 = document.getElementById('input_1').value;
+            let num2 = document.getElementById('input_2').value;
+            const resultBox = document.getElementById('result');
+            resultBox.innerHTML = parseFloat(num1) + parseFloat(num2);
+        }
+
+        function div() {
+            let num1 = document.getElementById('input_1').value;
+            let num2 = document.getElementById('input_2').value;
+            const resultBox = document.getElementById('result');
+            if (num2 != '0') {
+                resultBox.innerHTML = parseFloat(num1) / parseFloat(num2);
+            } else {
+                resultBox.innerHTML = "Devide by zero"
+            }
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="simpleCalcBoy">
+        <div>
+            <input type="text" id="input_1">
+            <input type="text" id="input_2">
+        </div>
+        <button id="plusButton" onclick="add()">+</button>
+        <button id="subButton" onclick="sub()">-</button>
+        <button id="divButton" onclick="div()">/</button> Result:
+        <span id="result"></span>
+    </div>
+</body>
+
+</html>

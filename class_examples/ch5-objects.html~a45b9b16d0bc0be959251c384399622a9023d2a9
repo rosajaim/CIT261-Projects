@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Title of Your Page</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <p>Objects examples</p>
+    <script src="superHerosObjects.js"></script>
+    <!-- <scrip scr="myMaths.js"></scrip> -->
+</body>
+
+</html>
