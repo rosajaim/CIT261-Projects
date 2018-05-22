@@ -17,8 +17,7 @@ var data = (localStorage.getItem('shopList')) ? JSON.parse(localStorage.getItem(
       addItem(value);
     }
   });
-
-
+  //touchstart event
   document.getElementById('add').addEventListener('touchstart', function() {
     var value = document.getElementById('item').value;
     if (value) {
@@ -113,6 +112,7 @@ var data = (localStorage.getItem('shopList')) ? JSON.parse(localStorage.getItem(
     remove.innerHTML = removeSVG;
   
     // Add click event for removing the item
+    remove.addEventListener('click', removeItem);
     remove.addEventListener('touchstart', removeItem);
   
     var complete = document.createElement('button');
@@ -120,6 +120,7 @@ var data = (localStorage.getItem('shopList')) ? JSON.parse(localStorage.getItem(
     complete.innerHTML = completeSVG;
   
     // Add click event for completing the item
+    complete.addEventListener('click', completeItem);
     complete.addEventListener('touchstart', completeItem);
   
     buttons.appendChild(remove);
