@@ -87,6 +87,7 @@ function completeItem() {
 
   parent.removeChild(item);
   target.insertBefore(item, target.childNodes[0]);
+
 }
 
 // Adds a new item to the todo list
