@@ -103,14 +103,14 @@ header button svg .fill {
   width: 100%;
   float: left;
   padding: 15px;
-}
+} 
 
-ul.todo {
+ul.shop {
   width: 100%;
   float: left;
 }
 
-ul.todo li {
+ul.shop li {
   width: 100%;
   min-height: 50px;
   float: left;
@@ -126,13 +126,13 @@ ul.todo li {
   margin: 0 0 10px 0;
   padding: 14px 100px 14px 14px;
   word-break: break-word;
-}
+} 
 
-ul.todo li:last-of-type {
+ul.shop li:last-of-type {
   margin: 0;
 }
 
-ul.todo li .buttons {
+ul.shop li .buttons {
   width: 100px;
   height: 50px;
 
@@ -141,7 +141,7 @@ ul.todo li .buttons {
   right: 0;
 }
 
-ul.todo li .buttons button {
+ul.shop li .buttons button {
   width: 50px;
   height: 50px;
   float: left;
@@ -156,7 +156,7 @@ ul.todo li .buttons button {
   -moz-appearance: none;
 }
 
-ul.todo li .buttons button:last-of-type:before {
+ul.shop li .buttons button:last-of-type:before {
   content: '';
   width: 1px;
   height: 30px;
@@ -167,7 +167,7 @@ ul.todo li .buttons button:last-of-type:before {
   left: 0;
 }
 
-ul.todo li .buttons button svg {
+ul.shop li .buttons button svg {
   width: 22px;
   height: 22px;
 
@@ -178,52 +178,52 @@ ul.todo li .buttons button svg {
   margin: -11px 0 0 -11px;
 }
 
-ul.todo li .buttons button.complete svg {
+ul.shop li .buttons button.complete svg {
   border-radius: 11px;
   border: 1.5px solid #25b99a;
 
   transition: background 0.2s ease;
 }
 
-ul.todo#completed li .buttons button.complete svg {
+ul.shop#purchased li .buttons button.complete svg {
   background: #25b99a;
   border: 0px;
 }
 
-ul.todo:not(#completed) li .buttons button.complete:hover svg {
+ul.shop:not(#purchased) li .buttons button.complete:hover svg {
   background: rgba(37, 185, 154, 0.75);
 }
 
-ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
+ul.shop:not(#purchased) li .buttons button.complete:hover svg .fill {
   fill: #fff;
 }
 
-ul.todo#completed li .buttons button.complete svg .fill {
+ul.shop#purchased li .buttons button.complete svg .fill {
   fill: #fff;
 }
 
-ul.todo li .buttons button svg .fill {
+ul.shop li .buttons button svg .fill {
   transition: fill 0.2s ease;
 }
 
-ul.todo li .buttons button.remove svg .fill {
+ul.shop li .buttons button.remove svg .fill {
   fill: #444;
 }
 
-ul.todo li .buttons button.remove:hover svg .fill {
+ul.shop li .buttons button.remove:hover svg .fill {
   fill: #f44336;
 }
 
-ul.todo li .buttons button.complete svg .fill {
+ul.shop li .buttons button.complete svg .fill {
   fill: #25b99a;
 }
 
-ul.todo#completed {
+ul.shop#purchased {
   position: relative;
   padding: 60px 0 0 0;
 }
 
-ul.todo#completed:before {
+ul.shop#purchased:before {
   content: '';
   width: 150px;
   height: 1px;
@@ -236,17 +236,17 @@ ul.todo#completed:before {
   margin: 0 0 0 -75px;
 }
 
-ul.todo#todo:empty:after {
+ul.shop#shop:empty:after {
   content: 'You have not yet created a list';
   margin: 15px 0 0 0;
 }
 
-ul.todo#completed:empty:after {
+ul.shop#purchased:empty:after {
   content: 'You have not yet added items!';
 }
 
-ul.todo#todo:after,
-ul.todo#completed:after {
+ul.shop#shop:after,
+ul.shop#purchased:after {
   width: 100%;
   display: block;
   text-align: center;
