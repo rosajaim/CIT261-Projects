@@ -34,7 +34,7 @@ header input {
   height: 50px;
   float: left;
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   text-indent: 18px;
   padding: 0 60px 0 0;
@@ -102,7 +102,7 @@ header button svg .fill {
 .container {
   width: 100%;
   float: left;
-  padding: 15px;
+  padding: 10px;
 } 
 
 ul.shop {
@@ -114,7 +114,7 @@ ul.shop li {
   width: 100%;
   min-height: 50px;
   float: left;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   color: #444;
   line-height: 22px;
@@ -156,9 +156,9 @@ ul.shop li .buttons button {
   -moz-appearance: none;
 }
 
-ul.shop li .buttons button:last-of-type:before {
+ul.shop li .buttons button:last-of-type:after {
   content: '';
-  width: 1px;
+  width: 1.5px;
   height: 30px;
   background: #edf0f1;
 
@@ -178,27 +178,26 @@ ul.shop li .buttons button svg {
   margin: -11px 0 0 -11px;
 }
 
-ul.shop li .buttons button.complete svg {
+ul.shop li .buttons button.purchase svg {
   border-radius: 11px;
   border: 1.5px solid #25b99a;
-
   transition: background 0.2s ease;
 }
 
-ul.shop#purchased li .buttons button.complete svg {
+ul.shop#purchased li .buttons button.purchase svg {
   background: #25b99a;
   border: 0px;
 }
 
-ul.shop:not(#purchased) li .buttons button.complete:hover svg {
+ul.shop:not(#purchased) li .buttons button.purchase:hover svg {
   background: rgba(37, 185, 154, 0.75);
 }
 
-ul.shop:not(#purchased) li .buttons button.complete:hover svg .fill {
+ul.shop:not(#purchased) li .buttons button.purchase:hover svg .fill {
   fill: #fff;
 }
 
-ul.shop#purchased li .buttons button.complete svg .fill {
+ul.shop#purchased li .buttons button.purchase svg .fill {
   fill: #fff;
 }
 
@@ -214,7 +213,7 @@ ul.shop li .buttons button.remove:hover svg .fill {
   fill: #f44336;
 }
 
-ul.shop li .buttons button.complete svg .fill {
+ul.shop li .buttons button.purchase svg .fill {
   fill: #25b99a;
 }
 
@@ -250,6 +249,6 @@ ul.shop#purchased:after {
   width: 100%;
   display: block;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #aaa;
 }
