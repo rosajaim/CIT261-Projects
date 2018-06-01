@@ -166,33 +166,6 @@ ul.shop li .buttons button svg {
   margin: -11px 0 0 -11px;
 }
 
-/* ul.shop li .buttons button.purchase svg {
-  border-radius: 11px;
-  border: 1.5px solid #25b99a;
-  transition: background 0.2s ease;
-}
-
-ul.shop#purchased li .buttons button.purchase svg {
-  background: #25b99a;
-  border: 0px;
-}
-
-ul.shop:not(#purchased) li .buttons button.purchase:hover svg {
-  background: rgba(37, 185, 154, 0.75);
-}
-
-ul.shop:not(#purchased) li .buttons button.purchase:hover svg .fill {
-  fill: #fff;
-}
-
-ul.shop#purchased li .buttons button.purchase svg .fill {
-  fill: #fff;
-} 
-
-ul.shop li .buttons button svg .fill {
-  transition: fill 0.2s ease;
-} */
-
 ul.shop li .buttons button.remove svg .fill {
   fill: #444;
 }
@@ -201,29 +174,10 @@ ul.shop li .buttons button.remove:hover svg .fill {
   fill: #f44336;
 }
 
-/* ul.shop#purchased {
-  position: relative;
-  padding: 60px 0 0 0;
-} */
-
-/* ul.shop#purchased:before {
-  content: 'Items in your cart';
-  color: #aaa;
-  position: absolute;
-  font-size: 14px;
-  top: 30px;
-  left: 50%;
-  margin: 0 0 0 -75px;
-} */
-
 ul.shop#shop:empty:after {
   content: 'You have not yet created a shopping list';
   margin: 15px 0 0 0;
 }
-
-/* ul.shop#purchased:empty:after {
-  content: 'You have not yet added items to your shopping cart';
-} */
 
 ul.shop#shop:after,
 ul.shop#purchased:after {
@@ -233,7 +187,6 @@ ul.shop#purchased:after {
   font-size: 14px;
   color: #aaa;
 }
-
 ul li.strike {
   color: #444;
   text-decoration: line-through;
@@ -249,6 +202,22 @@ div input {
   font-size: 17px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+}
+
+div input::-webkit-input {
+  color: #f44336;
+}
+
+div input:-moz-input {
+  color: r#f44336;
+}
+
+div input::-moz-input {
+  color: #f44336;
+}
+
+div input:-ms-input {
+  color: #f44336;
 }
 
 
