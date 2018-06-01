@@ -64,6 +64,8 @@ function dataObjectUpdated() {
   localStorage.setItem('shopList', JSON.stringify(data));
 }
 
+
+
 function removeItem() {
   let item = this.parentNode.parentNode;
   let parent = item.parentNode;
@@ -82,7 +84,7 @@ function removeItem() {
 
 function purchaseItem() {
   let item = this.parentNode.parentNode;
-  let parent = item.parentNode;
+  let parent = item.parentNode; 
   let id = parent.id;
   let value = item.innerText;
 
@@ -95,11 +97,15 @@ function purchaseItem() {
   }
   dataObjectUpdated();
 
-  // Checks if the item should be added to the purchased list or to re-added to the shop list
-  let target = (id === 'shop') ? document.getElementById('purchased') : document.getElementById('shop');
+  //Checks if the item should be added to the purchased list or to re-added to the shop list
+  // let target = (id === 'shop') ? document.getElementById('purchased') : document.getElementById('shop');
 
-  parent.removeChild(item);
-  target.insertBefore(item, target.childNodes[0]);
+  // parent.removeChild(item);
+  // target.insertBefore(item, target.childNodes[0]);
+}
+
+function clearList() {
+  document.getElementById("shop").innerHTML = "";
 }
 
 let target = document.querySelector('ul');
@@ -127,15 +133,15 @@ function addItemshopM(text, purchased) {
   // Add click event for removing the item
   remove.addEventListener('click', removeItem);
 
-  let purchase = document.createElement('button');
-  purchase.classList.add('purchase');
+  // let purchase = document.createElement('button');
+  // purchase.classList.add('purchase');
   // purchase.innerHTML = purchaseSVG;
 
   // Add click event for completing the item
-  purchase.addEventListener('click', purchaseItem);
+  // purchase.addEventListener('click', purchaseItem);
 
-  
-  buttons.appendChild(purchase);
+
+  // buttons.appendChild(purchase);
   buttons.appendChild(remove);
   item.appendChild(buttons);
 
