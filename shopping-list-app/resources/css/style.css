@@ -170,7 +170,7 @@ ul.shop li .buttons button:last-of-type:after {
 ul.shop li .buttons button svg {
   width: 22px;
   height: 22px;
-
+  float: left;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -199,7 +199,7 @@ ul.shop:not(#purchased) li .buttons button.purchase:hover svg .fill {
 
 ul.shop#purchased li .buttons button.purchase svg .fill {
   fill: #fff;
-}
+} 
 
 ul.shop li .buttons button svg .fill {
   transition: fill 0.2s ease;
@@ -224,7 +224,7 @@ ul.shop#purchased {
 
 ul.shop#purchased:before {
   content: '';
-  width: 150px;
+  width: 180px;
   height: 1px;
   background: #d8e5e0;
 
@@ -236,12 +236,12 @@ ul.shop#purchased:before {
 }
 
 ul.shop#shop:empty:after {
-  content: 'You have not yet created a list';
+  content: 'You have not yet created a shopping list';
   margin: 15px 0 0 0;
 }
 
 ul.shop#purchased:empty:after {
-  content: 'You have not yet added items!';
+  content: 'You have not yet added items to your shopping cart';
 }
 
 ul.shop#shop:after,
@@ -252,3 +252,10 @@ ul.shop#purchased:after {
   font-size: 14px;
   color: #aaa;
 }
+
+ ul li.strike {
+  color: #444;
+  text-decoration: line-through;
+  
+}
+
