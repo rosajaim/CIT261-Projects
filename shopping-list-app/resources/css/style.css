@@ -196,36 +196,25 @@ ul li.strike {
   text-decoration: line-through;
 }
 
-div input {
-  width: 50%;
+div button {
+  width: 20%;
   background: #f44336;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin: 5% 0 0 25%;
+  margin: 5% 0 0 40%;
   font-size: 17px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+    
 }
+ div button:focus {
+   outline: none;
+ }
 
-div input::-webkit-input {
-  color: #f44336;
-}
-
-div input:-moz-input {
-  color: r#f44336;
-}
-
-div input::-moz-input {
-  color: #f44336;
-}
-
-div input:-ms-input {
-  color: #f44336;
-}
-
-
-div input:hover {
+div button:hover {
   opacity: 0.9;
  
 }

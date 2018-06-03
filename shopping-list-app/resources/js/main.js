@@ -106,8 +106,9 @@ function purchaseItem() {
 
 function clearList() {
   document.getElementById("shop").innerHTML = "";
-}
+  dataObjectUpdated();
 
+}
 let target = document.querySelector('ul');
 target.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
@@ -117,7 +118,7 @@ target.addEventListener('click', function (ev) {
 
 // Adds a new item to the shop list
 function addItemshopM(text, purchased) {
-  let list = (purchased) ? document.getElementById('purchased') : document.getElementById('shop');
+  let list = (purchased) ? document.getElementsByClassName('strike') : document.getElementById('shop');
 
   let item = document.createElement('li');
   item.innerText = text;
