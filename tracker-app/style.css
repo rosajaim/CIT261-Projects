@@ -20,6 +20,7 @@ h1.title {
     background: #05386b;
     padding: 0.5rem 0 0.5rem 0;
     border-radius: 5px;
+    
     /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -31,12 +32,16 @@ h3 {
 .desc-input {
     font-family: 'Lato', sans-serif;
     color: #05386b;
+    font-size: 15px;
 }
 
 #issueSeverityInput,
 .form-control {
-    background: #edf5e1;
+    background:#edf5e1;
     outline: none;
+    height: 50px;
+    font-size: 18px;
+    border: none;
 }
 
 .jumbotron {
