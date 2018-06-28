@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tracker App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="fetchIssues()">
+    <div class="container">
+        <h1 class="title">Issue Tracker
+            <!-- <small>by CodingTheSmartWay</small> -->
+        </h1>
+        <div class="jumbotron">
+            <h3>Add new Issue:</h3>
+            <form id="issueInputform">
+                <div class="form-group">
+                    <label class="desc-input" for="issueDescInput">Description</label>
+                    <input type="text" class="form-control" id="issueDescInput" placeholder="Issue Description">
+                </div>
+                <div class="form-group">
+                    <label class="desc-input" for="issueSeverityInput">Severity</label>
+                    <select id="issueSeverityInput" class="form-control">
+                        <option value="low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label class="desc-input" for="issueAssignedToInput">Assigned To</label>
+                    <input type="text" class="form-control" id="issueAssigmerdToInput" placeholder="Enter responsable">
+                </div>
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </div>
+        <div class="col-lg-12">
+            <div id="issuesList">
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy JR CIT261</p>
+        </div>
+    </div>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
