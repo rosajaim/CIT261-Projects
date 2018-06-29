@@ -46,7 +46,6 @@ h3 {
 .jumbotron {
     background: #8ee4af;
     
-    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .btn.btn-primary {
@@ -54,13 +53,18 @@ h3 {
     color: #edf5e1;
     padding: 8px;
     width: 100%;
+    outline: none;
+}
+
+.glyphicon.glyphicon-time {
+    /* color: red; */
 }
 
 .btn.btn-danger {
 margin-left: 5px;}
 
 .well {
-    /* background: #8ee4af; */
+    background: #8ee4af;
         /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
     border: none;

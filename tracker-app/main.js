@@ -16,7 +16,7 @@ function saveIssue(e) {
     minute: '2-digit',
     second: '2-digit',
     // timeZoneName: 'short'
-})
+  })
 
   const issue = {
     id: issueId,
@@ -88,7 +88,7 @@ function fetchIssues() {
     const assignedTo = issues[i].assignedTo;
     const status = issues[i].status;
 
-    issuesList.innerHTML += '<div class="well">' +
+    issuesList.innerHTML += '<div id="reveal" class="well">' +
       '<h6>Date: ' + date + '</h6>' +
       '<h6>Issue ID: ' + id + '</h6>' +
       '<p><span class="label label-info">' + status + '</span></p>' +
@@ -97,6 +97,11 @@ function fetchIssues() {
       '<p><span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>' +
       '<a href="#" onclick="setStatusClosed(event,\'' + id + '\')" class="btn btn-warning">Close</a> ' +
       '<a href="#" onclick="deleteIssue(event,\'' + id + '\')" class="btn btn-danger">Delete</a>' +
-      '</div>';
+      '</div>'; 
+      
   }
+  
 }
+
+
+
