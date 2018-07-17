@@ -88,9 +88,10 @@ function fetchIssues() {
     const assignedTo = issues[i].assignedTo;
     const status = issues[i].status;
 
-    issuesList.innerHTML += '<div id="reveal" class="well">' +
-      '<h6>Date: ' + date + '</h6>' +
-      '<h6>Issue ID: ' + id + '</h6>' +
+    issuesList.innerHTML += 
+      '<div id="reveal" class="well">' +
+      '<h6><strong>Date:</strong> ' + date + '</h6>' +
+      '<h6><strong>Issue ID:</strong> ' + id + '</h6>' +
       '<p><span class="label label-info">' + status + '</span></p>' +
       '<h3>' + desc + '</h3>' +
       '<p><span class="glyphicon glyphicon-time"></span> ' + severity + '</p>' +

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +9,15 @@
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="fetchIssues()">
     <div class="container">
-        
+
         <h1 class="title">Issue Tracker</h1>
         <div class="jumbotron">
             <h3>Add New Issue:</h3>
@@ -28,21 +29,21 @@
                 <div class="form-group">
                     <label class="label-desc" for="issueSeverityInput">Severity</label>
                     <select id="issueSeverityInput" class="form-control">
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High">High</option>
-            </select>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label class="label-desc" for="issueAssignedToInput">Assigned To</label>
-                    <input type="text" class="form-control" required id="issueAssignedToInput" placeholder="Enter responsible ..." >
+                    <input type="text" class="form-control" required id="issueAssignedToInput" placeholder="Enter responsible ...">
                 </div>
                 <button type="submit" id="add" class="btn btn-primary">Add</button>
             </form>
         </div>
         <div class="col-lg-13">
             <div id="issuesList">
-        
+
             </div>
         </div>
         <div class="footer">
@@ -51,9 +52,12 @@
     </div>
     <script src="chance.js"></script>
     <script src="animation.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
